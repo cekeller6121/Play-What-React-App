@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PlayListItem from './PlayListItem.js';
 
 export default class PlayList extends Component {
   constructor(props) {
@@ -9,7 +10,7 @@ export default class PlayList extends Component {
   }
   render() {
     return (
-      <div>this.state.data</div>
+      <div><PlayListItem songs={this.state.songs}/></div>
     )
   }
   componentDidMount() {
