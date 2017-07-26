@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 export default class PlayListItem extends Component {
   constructor(props) {
     super(props);
+    this.state = {};
   }
   render() {
     let songInfo = this.props.songs.map((songs, files) => {

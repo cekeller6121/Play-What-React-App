@@ -1,4 +1,5 @@
-.App {
+.navBar {
+  background-color: LightGray;
   text-align: center;
 }
 
@@ -8,4 +9,24 @@
 
 .songInfo {
   list-style: none;
+}
+
+.formAndPlayList {
+  display: flex;
+  flex-direction: row;
+}
+
+.formForPlayList {
+  background-color: DodgerBlue;
+  width: 200px;
+}
+
+.submitButton {
+  background-color: CadetBlue;
+}
+
+.songInfo {
+  background-color: DodgerBlue;
+  margin-left: 50px;
+  width: 500px;
 }
