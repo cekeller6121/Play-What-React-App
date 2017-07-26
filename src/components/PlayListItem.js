@@ -8,17 +8,17 @@ export default class PlayListItem extends Component {
     let songInfo = this.props.songs.map((songs, files) => {
       return (
       <li key={files} className="songInfo">
-        <div>{songs.userName}</div>
-        <div>{songs.songArtist}</div>
-        <div>{songs.songTitle}</div>
-        <div>{songs.songNotes}</div>
+        <div className="userName">Username: {songs.userName}</div>
+        <div className="songArtist">Artist: {songs.songArtist}</div>
+        <div className="songTitle">Song Title: {songs.songTitle}</div>
+        <div className="songNotes">Song Notes: {songs.songNotes}</div>
       </li>
     )
     })
-    
+
     return (
       <div className="pl-item">
-        <ul>
+        <ul className="songInfo">
         {songInfo}
         </ul>
       </div>
