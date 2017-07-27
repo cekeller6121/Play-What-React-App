@@ -3,7 +3,12 @@ import React, { Component } from 'react';
 export default class PlayListForm extends Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      userName: '',
+      songTitle: '',
+      songArtist: '',
+      songNotes: ''
+    };
   }
   addToList = (e) => {
     e.preventDefault();
@@ -28,8 +33,8 @@ export default class PlayListForm extends Component {
 }
   render() {
     return (
-    <div className="formForPlayList"><form>
-    <label htmlFor="username">Username</label><br /><input type="text" name="username" />
+    <div className="formForPlayList"><form method="post">
+    <label htmlFor="userName">Username</label><br /><input type="text" name="userName" />
     <br />
     <label htmlFor="artistBand">Artist/Band</label><br /><input type="text" name="artistBand" />
     <br />
@@ -37,7 +42,7 @@ export default class PlayListForm extends Component {
     <br />
     <label htmlFor="songNotes">Notes about the song</label><br /><input type="text" name="songNotes" />
     <br />
-    <input type="submit" className="submitButton" />
+    <input type="submit" className="submitButton" value="submit" />
     </form></div>
     )
   }
