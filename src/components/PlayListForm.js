@@ -62,16 +62,16 @@ export default class PlayListForm extends Component {
 }
   render() {
     return (
-    <div className="formForPlayList"><form onSubmit={this.addToList}>
-    <label htmlFor="userName">Username</label><br /><input type="text" name="userName" onChange={this.handleNameChange} value={this.state.userName}/>
+    <div><form onSubmit={this.addToList} className="form-control">
+    <label htmlFor="userName">Username</label><br /><input type="text" className="form-control" name="userName" onChange={this.handleNameChange} value={this.state.userName}/>
     <br />
-    <label htmlFor="songArtist">Artist/Band</label><br /><input type="text" name="songArtist" onChange={this.handleArtistChange} value={this.state.songArtist}/>
+    <label htmlFor="songArtist">Artist/Band</label><br /><input type="text" className="form-control" name="songArtist" onChange={this.handleArtistChange} value={this.state.songArtist}/>
     <br />
-    <label htmlFor="songTitle">Song Title</label><br /><input type="text" name="songTitle" onChange={this.handleTitleChange} value={this.state.songTitle}/>
+    <label htmlFor="songTitle">Song Title</label><br /><input type="text" className="form-control" name="songTitle" onChange={this.handleTitleChange} value={this.state.songTitle}/>
     <br />
-    <label htmlFor="songNotes">Notes about the song</label><br /><input type="text" name="songNotes" onChange={this.handleNotesChange} value={this.state.songNotes}/>
+    <label htmlFor="songNotes">Notes about the song</label><br /><input type="text" className="form-control" name="songNotes" onChange={this.handleNotesChange} value={this.state.songNotes}/>
     <br />
-    <input type="submit" className="submitButton" value="submit" />
+    <input type="submit" className="btn btn-primary" value="Submit" />
     </form></div>
     )
   }

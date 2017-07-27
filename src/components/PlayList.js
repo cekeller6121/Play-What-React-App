@@ -11,7 +11,7 @@ export default class PlayList extends Component {
   render() {
     return (
       <div>
-      <form onSubmit={this.fetchData}><input type="submit" value="Update!"/></form>
+      <form onSubmit={this.fetchData}><input type="submit" className="btn btn-primary" value="Update!"/></form>
       <div><PlayListItem songs={this.state.songs}/></div>
       </div>
     )
