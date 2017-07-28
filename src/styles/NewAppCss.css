@@ -1,7 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower');
+
+
 body {
   background-color: LightGray;
+  margin-top: 10px;
 }
 
 .navBar {
+  background-color: Gray;
+  border-radius: 15px;
+  color: White;
+  font-family: 'Indie Flower';
   text-align: center;
+}
+
+.btn-primary {
+  font-family: 'Indie Flower';
+  font-size: 26px;
+}
+
+#updateButton {
+  margin-bottom: 10px;
+}
+
+.text-primary, .text-success {
+  font-family: 'Amatic SC';
+  font-size: 26px;
 }
